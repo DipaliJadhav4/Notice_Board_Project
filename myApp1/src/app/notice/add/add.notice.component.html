@@ -1,0 +1,32 @@
+
+<h1>Add Notice</h1>
+<div class = "form">
+ 
+    <div class="form-group">
+      <label for="">Title</label>
+      <input [(ngModel)]='title' class="form-control">
+    </div>
+  
+  
+    <div class="form-group">
+        <label for="">Description </label>
+        <textarea [(ngModel)]='description' type="text" class="form-control"></textarea>
+    </div>
+
+  
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="">Upload File</label>
+            <input (change)="onSelectFile($event)" type="file" class="form-control">
+          </div>
+        </div>
+      </div>
+  
+</div>
+
+    <div class ="form-group">
+    <button (click)="onAdd()" class="btn btn-success"  >Add </button>
+    <a style="margin-left: 10px;" routerLink="/notice-list" class="btn btn-danger">Cancel</a>
+  </div>

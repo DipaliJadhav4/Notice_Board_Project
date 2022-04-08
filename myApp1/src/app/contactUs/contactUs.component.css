@@ -1,0 +1,9 @@
+.bg-img{
+    background-image: url(../images/logInpageImage.jpg);
+    min-height: 700px;
+    min-width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }

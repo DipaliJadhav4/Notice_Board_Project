@@ -1,0 +1,50 @@
+h2{
+
+    text-align: center;
+    color: black;
+   margin: 40px
+  
+  }
+
+  img.avatar{
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  
+  table {
+    font-family: arial, sans-serif;
+   
+    width: 100%;
+  }
+  .bg-img{
+    background-image: url(../../images/bg1.jpg);
+    min-height: 500px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  td, th {
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr {
+    background-color: #dddddd;
+  }
+  
+  
+  button {height: 70px;
+  
+  }

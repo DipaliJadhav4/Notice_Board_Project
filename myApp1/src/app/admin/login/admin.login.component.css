@@ -1,0 +1,86 @@
+.img
+{
+    border:1px solid black;
+    width:1140px;
+    height: 550px;
+   background-image: url(src/app/images/logInpageImage.jpg);
+}
+img.avatar{
+  width: 40%;
+  border-radius: 50%;
+}
+
+.imgcontainer{
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.form
+  {
+    border: 0.5px solid black;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 0 5px 2px #5B595C;
+    /* box-shadow: 0 0 5px 2px #969696; */
+    /* box-shadow: 0 0 5px 2px #636363; */
+  }
+
+.bg-img{
+  background-image: url(../../images/bg_1.jpg);
+  min-height: 600px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1{
+  text-shadow: darkorchid;
+  text-align: center;
+  color: black;
+ text-anchor: inherit;
+ text-decoration-color: blueviolet;
+
+}
+
+h2{
+    text-shadow: darkorchid;
+    text-align: center;
+    color: rgb(247, 243, 243);
+   text-anchor: inherit;
+   text-decoration-color: blueviolet;
+
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #455;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: rgb(54, 193, 218);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

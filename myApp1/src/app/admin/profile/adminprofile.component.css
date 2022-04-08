@@ -1,0 +1,18 @@
+
+h2{
+    text-shadow: darkorchid;
+    text-align: center;
+    color: black;
+   text-anchor: inherit;
+   text-decoration-color: blueviolet;
+
+}
+
+.img {
+    background-image: url(../../images/profile.png);
+    width: 250px;
+    align-content: center;
+    height: 250px;
+    border-radius: 50%;
+  }
+  

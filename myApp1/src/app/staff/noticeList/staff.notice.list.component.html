@@ -1,0 +1,86 @@
+<!-- 
+<h1>Notice List</h1>
+
+<button class="btn btn-primary pull-right"  >Back</button>
+<table class="table table-striped-bordered">
+
+<!-- <h4 *ngIf="pgs.length == 0">There are no pgs....</h4>
+<table *ngIf="pgs.length > 0" class="table table-striped table-bordered"> -->
+  <!-- <thead>
+    <tr>
+      <th>Id</th> 
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Actions</th>
+    </tr>
+  </thead> -->
+ <!-- <tbody>
+    <tr *ngFor="let PG of PGs; let index = index">
+      <td>{{index + 1}}</td>
+                            <td>{{PG.PGID}}</td>
+       <td>{{PG.PGNAME}}</td>
+      <td>{{PG.PGCITY}}</td>
+      <td>{{PG.PGAREA}}</td>
+      <td>{{PG.GENDER}}</td>
+      <td>{{PG.SIG_SHARE}}</td>
+      <td>{{PG.TWO_SHARE}}</td>
+      <td>{{PG.THREE_SHARE}}</td>
+      <td>{{PG.FOUR_SHARE}}</td>
+      <td>{{PG.THUMBNAIL}}</td>
+      
+      <td>
+        <button (click)="onDelete()" class="btn btn-danger">
+          <i class="glyphicon glyphicon-trash"></i>
+        </button>
+        <button (click)="onUpdate()" class="btn btn-warning" style="margin-left: 10px;">
+          <i class="glyphicon glyphicon-pencil"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>-->
+
+    <!-- <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+      <td>
+        <button  class="btn btn-warning" style="margin-left:0px;">Show Notice</button>
+      </td>
+    </tr>
+  </tbody>
+</table> -->
+
+
+
+
+<h1>Notices</h1>
+<button routerLink="/staff-login" class="btn btn-primary pull-right">Back</button>
+<table  class="table table-striped table-bordered">
+  <thead>
+    <tr>
+     
+      <th>Id</th>
+      <th>Title </th>
+      <th>Description</th>
+      <th>Images</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let notice of Notices; let index = index">
+      <td>{{index + 1}}</td>
+      <td>{{notice.title}}</td>
+      <td>{{notice.description}}</td>
+      <td><img src="http://localhost:4500/{{notice.photo}}" alt=""></td>
+
+     
+      <td>
+          <button (click)="onShowNotice(notice.noticeId)" class="btn btn-warning" style="margin-left:0px;">Show Notice</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

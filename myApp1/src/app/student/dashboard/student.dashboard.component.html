@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <marquee> <h1>College Notice Board </h1></marquee>
+<div class="bg-img">
+
+<div class="container">
+<div class="row">
+  <h2>Student Dashboard</h2>
+ 
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+        <div class="list-group">
+          <div class="list-group">
+                <!-- <a href="/student-login" class="btn btn-warning btn-sm pull-right" >
+                    <span  class="glyphicon glyphicon-log-out"></span> Log out
+                    </a> -->
+        
+        <button [class.active]="activePath == '/student-notice-list'" (click)="switchToComponent('student-notice-list')" type="button" class="list-group-item list-group-item-action active">Profile</button>
+        <button [class.active]="activePath == '/student-notice-list'" (click)="switchToComponent('student-notice-list')" type="button" class="list-group-item list-group-item-action active">Notices</button>
+        <button [class.active]="activePath == '/notice-list'" (click)="switchToComponent('notice-list')" type="button" class="list-group-item list-group-item-action">Edit Profile</button>
+        <button [class.active]="activePath == '/notice-list'" (click)="switchToComponent('notice-list')" type="button" class="list-group-item list-group-item-action">Notes</button>
+        <button [class.active]="activePath == '/notice-list'" (click)="switchToComponent('notice-list')" type="button" class="list-group-item list-group-item-action">Queries</button>
+        
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
+        <div action="" method="post">
+                <div class="imgcontainer">
+                    <img src="../../../assets/notice-icon.png" alt="Avatar" class ="avatar">
+                </div>
+            </div>
+          
+</div>
+<div class="col-md-1"></div>
+ <div class="col-md-1">
+            <a href="/student-login" class="btn btn-warning btn-sm pull-right" >
+                <span  class="glyphicon glyphicon-log-out"></span> Log out
+            </a>   
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
